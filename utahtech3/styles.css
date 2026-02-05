@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(#eeeeee, #ffffff);
+    background-image: linear-gradient(to bottom, #eeeeee, #ffffff);
     color: #666666;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-attachment: fixed;
