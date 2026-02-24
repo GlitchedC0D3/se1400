@@ -22,7 +22,7 @@ nav {
     grid-column: 2 / -2;
 }
 main {
-    height: 810px;
+    height: 1440px;
     background-color: rgba(100,0,255,.3);
     grid-row: 1 / 6;
     grid-column: 3 / -3;
