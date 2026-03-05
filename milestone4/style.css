@@ -1,0 +1,76 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-attachment: fixed;
+}
+#wrapper {
+    display:grid;
+    grid-auto-rows: minmax(0, auto);
+    grid-template-columns: minmax(0px, 1fr) repeat(6,minmax(0, 175px) minmax(0px, 1fr));
+}
+header {
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    font-style: italic;
+    height: 150px;
+    background-color: #414042;
+    grid-row: 1 / 2;
+    grid-column: 2 / -2;
+}
+nav {
+    padding: 0;
+    margin: 0;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    grid-row: 2 / 3;
+    grid-column: 2 / -2;
+    margin: 0 auto;
+}
+nav ul {
+    margin: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+nav a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+    display: block;
+    padding: 1.75em;
+    color: #f15a29;
+}
+nav ul li {
+    width: 100%;
+}
+nav a:hover{
+    color: white;
+    background-color: #f15a29;
+}
+.hero {
+    height: 440px;
+    background-color: white;
+    grid-row: 3 / 4;
+    grid-column: 2 / -2;
+    background-image: url(img/blurred-keyboard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+}
+main {
+    height: 1440px;
+    background-color: #414042;
+    grid-row: 4 / 5;
+    grid-column: 3 / -3;
+}
+footer {
+    height: 165px;
+    background-color: rgba(255,0,255,.3);
+    grid-row: 5 / 6;
+    grid-column: 2 / -2;
+}

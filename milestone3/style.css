@@ -10,7 +10,7 @@ header {
     grid-column: 2 / -2;
 }
 nav {
-    height: 40px;
+    height: 80px;
     background-color: rgba(0,0,255,.3);
     grid-row: 2 / 3;
     grid-column: 2 / -2;
