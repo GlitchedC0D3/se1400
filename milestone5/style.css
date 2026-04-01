@@ -34,8 +34,9 @@ header #line-2,
 header #line-3 {
     position: absolute;
     display: block;
-    width: 107.6vw;
-    margin-left: calc(50% - 50vw);
+    width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
     height: 20px;
     background-color: #231f20;
     z-index: 1;
@@ -178,26 +179,20 @@ main {
     flex-direction: column;
     justify-content: space-between;
 }
-.review1 {
-    background-size: cover;
-    background-image: url(img/blurred-keyboard.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 25%;
-    background-size: 80% 75%;
-}
-.review2 {
-    background-size: cover;
-    background-image: url(img/blurred-keyboard.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 25%;
-    background-size: 80% 75%;
-}
+.review1,
+.review2,
 .review3 {
-    background-size: cover;
+    background-size:contain;
     background-image: url(img/blurred-keyboard.jpg);
     background-repeat: no-repeat;
     background-position: 50% 25%;
     background-size: 80% 75%;
+}
+.white1,
+.white2,
+.white3 {
+    display: block;
+    position: absolute;
 }
 .reviews .review a {
     text-decoration: none;
@@ -223,4 +218,16 @@ footer {
     grid-row: 5 / 6;
     grid-column: 2 / -2;
     text-align: center;
+}
+@media only screen and (max-width: 992px) {
+    #wrapper {
+        display: grid;
+        grid-template-columns: 1fr 768px 1fr;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #wrapper {
+        display: grid;
+        grid-template-columns: auto;
+    }
 }
