@@ -184,15 +184,7 @@ main {
     width:100%;
     margin-bottom:20px;
 }
-.review1,
-.review2,
-.review3 {
-    background-size:contain;
-    background-image: url(img/blurred-keyboard.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 25%;
-    background-size: 80% 75%;
-}
+
 .reviews .review a {
     text-decoration: none;
     text-align: center;
