@@ -3,6 +3,7 @@ body {
     background-attachment: fixed;
     background-color: #414042;
     margin: 0;
+    box-sizing: border-box;
 }
 #wrapper {
     display:grid;
@@ -159,7 +160,6 @@ nav #extra-white {
     background-color: white;
 }
 main {
-    height: 800px;
     grid-row: 4 / 5;
     grid-column: 3 / -3;
 }
@@ -171,13 +171,18 @@ main {
     padding: 20px;
 }
 .review {
-    height: 300px;
+    /* height: 300px; */
     flex: 1;
     background-color: white;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding:20px;
+}
+.review img {
+    width:100%;
+    margin-bottom:20px;
 }
 .review1,
 .review2,
@@ -187,12 +192,6 @@ main {
     background-repeat: no-repeat;
     background-position: 50% 25%;
     background-size: 80% 75%;
-}
-.white1,
-.white2,
-.white3 {
-    display: block;
-    position: absolute;
 }
 .reviews .review a {
     text-decoration: none;
@@ -229,5 +228,31 @@ footer {
     #wrapper {
         display: grid;
         grid-template-columns: auto;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100vw;
+    }
+    nav a {
+        height:40px;
+    }
+    nav a:hover {
+        transform: unset;
+        margin: 0px;
+    }
+    nav #extra-white {
+        width: 0;
+    }
+    nav #orange-line {
+        width: 0;
+    }
+    .hero #bottom-padding-line {
+        bottom:-155px;
+    }
+    .reviews {
+        flex-direction: column;
+    }
+    .review {
+        flex: auto;
     }
 }
