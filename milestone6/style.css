@@ -177,6 +177,11 @@ nav #extra-white {
     align-items: center;
     text-align: center;
     color: white;
+    text-shadow: 
+    -2px -2px 0 #414042,  
+     2px -2px 0 #414042,
+    -2px  2px 0 #414042,
+     2px  2px 0 #414042;
 }
 .review-2-hero {
     height: 200px;
@@ -192,7 +197,12 @@ nav #extra-white {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: black;
+    color: white;
+    text-shadow: 
+    -2px -2px 0 #414042,  
+     2px -2px 0 #414042,
+    -2px  2px 0 #414042,
+     2px  2px 0 #414042;
 }
 .review-3-hero {
     height: 200px;
@@ -209,6 +219,11 @@ nav #extra-white {
     align-items: center;
     text-align: center;
     color: white;
+    text-shadow: 
+    -2px -2px 0 #414042,  
+     2px -2px 0 #414042,
+    -2px  2px 0 #414042,
+     2px  2px 0 #414042;
 }
 .smaller-hero {
     height: 200px;
@@ -287,7 +302,6 @@ main h2 {
     width:100%;
     margin-bottom:20px;
 }
-
 .reviews .review a {
     text-decoration: none;
     text-align: center;
@@ -322,6 +336,68 @@ main h2 {
     color: black;
 
 }
+#review-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    text-align: left;
+    color: white;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45%;
+}
+.time {
+    width: 384px;
+    text-align: left;
+    color: white;
+    flex: 1;
+    position: absolute;
+    margin-top: 10px;
+}
+.time img {
+    float: left;
+    width: 25%;
+}
+.time h2 {
+    text-align: left;
+    padding: 0px;
+    margin-top: 15px;
+    font-size: 75px;
+}
+.time h4 {
+    margin-top: 5px;
+}
+.time h2, .time h4 {
+    padding-left: 80px;
+    margin-left: 20px;
+    position: absolute
+}
+.vertical-seperator {
+    height: 65px
+}
+.rating {
+    margin-left: 35vw;
+    text-align: left;
+    color: white;
+    flex: 1;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.rating h2 {
+    text-align: left;
+    padding: 0px;
+    font-size: 75px;
+    margin-top: -40px;
+}
+.rating h4 {
+    margin-top: -50px;
+}
+.rating h2, .rating h4 {
+    position: absolute
+}
 footer {
     margin-top: 75px;
     height: 125px;
@@ -338,6 +414,9 @@ footer a {
     #wrapper {
         display: grid;
         grid-template-columns: 1fr 768px 1fr;
+    }
+    .rating {
+        margin-left: 384px;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -370,5 +449,9 @@ footer a {
     }
     .review {
         flex: auto;
+    }
+    .rating {
+        margin-left: 65vw;
+        margin-right: 50vw;
     }
 }
