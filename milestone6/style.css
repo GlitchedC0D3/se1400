@@ -212,7 +212,7 @@ nav #extra-white {
     background-image: url(img/hl2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 20%;
+    background-position: 50% 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -314,27 +314,42 @@ main h2 {
     align-self: center;
 }
 #explanation {
-    display: block;
+    display: flex;
     background-color: white;
     text-align: center;
     margin: 10px auto;
-    padding: 20px;
-    height: 130px;
     margin-top: 50px;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+#explanation h2 {
+    color: black;
+    padding-top: none;
+}
+#explanation h4 {
+    position: static;
+    font-weight: lighter;
 }
 #contact-explanation {
     display: block;
     background-color: white;
     text-align: center;
     margin: 10px auto;
-    padding: 20px;
-    height: 130px;
+    height: 140px;
     margin-top: 50px;
 }
 #contact-explanation a {
     text-decoration: none;
     color: black;
-
+    font-size: xx-large;
+    font-weight: bold;
+}
+#contact-explanation h4 {
+    padding-top: 20px;
+    font-size: x-large;
+    font-weight: lighter;
 }
 #review-info {
     display: flex;
