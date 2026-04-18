@@ -323,6 +323,10 @@ main h2 {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
+    padding-top: 20px;
+}
+.home #explanation {
+    padding-top: 0px;
 }
 #explanation h2 {
     color: black;
