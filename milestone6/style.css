@@ -364,6 +364,7 @@ main h2 {
     width: 45%;
 }
 .time {
+    z-index: -1;
     width: 384px;
     text-align: left;
     color: white;
@@ -393,6 +394,7 @@ main h2 {
     height: 65px
 }
 .rating {
+    z-index: -1;
     margin-left: 35vw;
     text-align: left;
     color: white;
